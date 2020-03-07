@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+html {
+  background-image: url("../img/chris-curry-j5s_uLajP2o-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  height: 70em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .container {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  height: 50em;
+  width: 50em;
+}
+body .container .input-area {
+  display: flex;
+  justify-content: center;
+}
+body .container .input-area .morse-input {
+  width: 80%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+body .container .input-area label {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-weight: bold;
+  font-size: 45px;
+  text-align: center;
+  padding-bottom: 30px;
+}
+body .container .input-area textarea {
+  border-radius: 5px;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+}
+
+.morse-code {
+  border: 1px solid white;
+  background: rgba(255, 255, 255, 0.5);
+  display: flex;
+  height: 35em;
+  width: 100%;
+  border-radius: 5px;
+}
+.morse-code #translated {
+  display: flex;
+  flex-flow: row wrap;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  align-content: flex-start;
+}
+.morse-code #translated .dash {
+  width: 25px;
+  height: 10px;
+  background: black;
+  margin: 5px;
+}
+.morse-code #translated .dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: black;
+  margin: 5px;
+}
+.morse-code #translated .space {
+  height: 10px;
+  width: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */
