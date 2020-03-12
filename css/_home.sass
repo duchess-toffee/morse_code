@@ -1,44 +1,84 @@
 html
-    background-image: url("../img/chris-curry-j5s_uLajP2o-unsplash.jpg")
+    background-image: $background-image
     background-size: cover
     background-repeat: no-repeat
-    display: flex
-    justify-content: center
-    align-items: center
+    background-position: center
+    overflow: hidden
+    height: 70em
+    +flex($flow:column, $justify: center)
 
 body
-    height: 70em
-    display: flex
-    justify-content: center
-    align-items: center
+    height: 80%
+    +flex($justify: center, $align: center)
 
     .container
-        display: flex
-        flex-flow: column
-        justify-content: space-around
-        height: 50em
-        width: 50em
-        
+        +flex($flow: column, $justify: space-around)
+        height: 100%
+        width: 80%
+        max-width: 80em
 
         .input-area
-            display: flex
-            justify-content: center
+            +flex($justify: center)
             
             .morse-input
                 width: 80%
-                display: flex
-                flex-flow: column
-                justify-content: center
+                +flex($flow: column, $justify: center)
+                margin-bottom: 3em
             
             label
-                font-family: "Montserrat", sans-serif
-                color: white
-                font-weight: bold
-                font-size: 45px
-                text-align: center
-                padding-bottom: 30px
+                +font-h1($font-stack, white, bold, 3em, center)
+                padding-bottom: 1.5em
 
             textarea
                 border-radius: 5px
-                width: 100%
-                font-family: "Montserrat", sans-serif
+                font-family: $font-stack
+        
+        .morse-code
+            border: 1px solid white
+            background: rgba(255, 255, 255, 0.5)
+            height: 100%
+            width: 100%
+            border-radius: 5px
+            overflow: auto
+
+            #translated
+                +flex($flow: row wrap, $align: center)
+                align-content: flex-start
+
+                .dash
+                    width: 25px
+                    height: 10px
+                    background: black
+                    margin: 5px
+
+                .dot
+                    width: 15px
+                    height: 15px
+                    border-radius: 50%
+                    background: black
+                    margin: 5px
+
+                .space
+                    height: 80px
+                    width: 25px
+
+@media (max-width: 500px)
+    html
+        height: 50em
+    
+    body
+        .container
+            .input-area
+                label
+                    font-size: 2em
+            .morse-code
+                #translated
+                    .dash
+                        width: 15px
+                        height: 5px
+                    .dot
+                        width: 10px
+                        height: 10px
+                    .space
+                        height: 50px
+                        width: 15px

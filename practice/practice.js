@@ -123,3 +123,9 @@
        }
 
        console.log(reverseStr(sentence));
+
+       module.exports = {
+           rmDuplicate,
+           palindromic,
+           reverseStr
+       }

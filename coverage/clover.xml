@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1583993423244" clover="3.2.0">
+  <project timestamp="1583993423244" name="All files">
+    <metrics statements="44" coveredstatements="43" conditionals="23" coveredconditionals="21" methods="7" coveredmethods="7" elements="74" coveredelements="71" complexity="0" loc="44" ncloc="44" packages="1" files="1" classes="1"/>
+    <file name="practice.js" path="C:\Users\hannah\developer\kappa\morse_code\practice\practice.js">
+      <metrics statements="44" coveredstatements="43" conditionals="23" coveredconditionals="21" methods="7" coveredmethods="7"/>
+      <line num="10" count="1" type="stmt"/>
+      <line num="13" count="10" type="stmt"/>
+      <line num="16" count="1" type="stmt"/>
+      <line num="23" count="1" type="stmt"/>
+      <line num="26" count="5" type="stmt"/>
+      <line num="31" count="5" type="stmt"/>
+      <line num="32" count="20" type="cond" truecount="2" falsecount="0"/>
+      <line num="33" count="1" type="stmt"/>
+      <line num="36" count="4" type="stmt"/>
+      <line num="40" count="49" type="cond" truecount="4" falsecount="0"/>
+      <line num="44" count="6" type="stmt"/>
+      <line num="46" count="43" type="stmt"/>
+      <line num="50" count="1" type="stmt"/>
+      <line num="59" count="1" type="stmt"/>
+      <line num="62" count="2" type="stmt"/>
+      <line num="66" count="8" type="stmt"/>
+      <line num="70" count="2" type="cond" truecount="1" falsecount="1"/>
+      <line num="71" count="2" type="stmt"/>
+      <line num="72" count="2" type="stmt"/>
+      <line num="73" count="2" type="stmt"/>
+      <line num="74" count="2" type="stmt"/>
+      <line num="78" count="2" type="stmt"/>
+      <line num="79" count="2" type="stmt"/>
+      <line num="80" count="2" type="stmt"/>
+      <line num="81" count="8" type="cond" truecount="2" falsecount="0"/>
+      <line num="82" count="6" type="stmt"/>
+      <line num="90" count="2" type="cond" truecount="1" falsecount="1"/>
+      <line num="91" count="2" type="stmt"/>
+      <line num="92" count="2" type="stmt"/>
+      <line num="93" count="2" type="stmt"/>
+      <line num="94" count="2" type="stmt"/>
+      <line num="95" count="8" type="cond" truecount="4" falsecount="0"/>
+      <line num="96" count="6" type="stmt"/>
+      <line num="97" count="6" type="stmt"/>
+      <line num="98" count="6" type="stmt"/>
+      <line num="99" count="6" type="stmt"/>
+      <line num="102" count="2" type="stmt"/>
+      <line num="105" count="2" type="stmt"/>
+      <line num="107" count="0" type="stmt"/>
+      <line num="112" count="44" type="cond" truecount="7" falsecount="0"/>
+      <line num="119" count="12" type="stmt"/>
+      <line num="121" count="32" type="stmt"/>
+      <line num="125" count="1" type="stmt"/>
+      <line num="127" count="1" type="stmt"/>
+    </file>
+  </project>
+</coverage>

@@ -3,14 +3,19 @@ html {
   background-image: url("../img/chris-curry-j5s_uLajP2o-unsplash.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+  height: 70em;
   display: flex;
+  flex-flow: column;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
 }
 
 body {
-  height: 70em;
+  height: 80%;
   display: flex;
+  flex-flow: row;
   justify-content: center;
   align-items: center;
 }
@@ -18,65 +23,90 @@ body .container {
   display: flex;
   flex-flow: column;
   justify-content: space-around;
-  height: 50em;
-  width: 50em;
+  align-items: stretch;
+  height: 100%;
+  width: 80%;
+  max-width: 80em;
 }
 body .container .input-area {
   display: flex;
+  flex-flow: row;
   justify-content: center;
+  align-items: stretch;
 }
 body .container .input-area .morse-input {
   width: 80%;
   display: flex;
   flex-flow: column;
   justify-content: center;
+  align-items: stretch;
+  margin-bottom: 3em;
 }
 body .container .input-area label {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", san-serif;
   color: white;
   font-weight: bold;
-  font-size: 45px;
+  font-size: 3em;
   text-align: center;
-  padding-bottom: 30px;
+  padding-bottom: 1.5em;
 }
 body .container .input-area textarea {
   border-radius: 5px;
-  width: 100%;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", san-serif;
 }
-
-.morse-code {
+body .container .morse-code {
   border: 1px solid white;
   background: rgba(255, 255, 255, 0.5);
-  display: flex;
-  height: 35em;
-  width: 100%;
-  border-radius: 5px;
-}
-.morse-code #translated {
-  display: flex;
-  flex-flow: row wrap;
   height: 100%;
   width: 100%;
+  border-radius: 5px;
+  overflow: auto;
+}
+body .container .morse-code #translated {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
   align-items: center;
   align-content: flex-start;
 }
-.morse-code #translated .dash {
+body .container .morse-code #translated .dash {
   width: 25px;
   height: 10px;
   background: black;
   margin: 5px;
 }
-.morse-code #translated .dot {
+body .container .morse-code #translated .dot {
   width: 15px;
   height: 15px;
   border-radius: 50%;
   background: black;
   margin: 5px;
 }
-.morse-code #translated .space {
-  height: 10px;
-  width: 20px;
+body .container .morse-code #translated .space {
+  height: 80px;
+  width: 25px;
+}
+
+@media (max-width: 500px) {
+  html {
+    height: 50em;
+  }
+
+  body .container .input-area label {
+    font-size: 2em;
+  }
+  body .container .morse-code #translated .dash {
+    width: 15px;
+    height: 5px;
+  }
+  body .container .morse-code #translated .dot {
+    width: 10px;
+    height: 10px;
+  }
+  body .container .morse-code #translated .space {
+    height: 50px;
+    width: 15px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

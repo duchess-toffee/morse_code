@@ -1,0 +1,19 @@
+$background-image: url("../img/chris-curry-j5s_uLajP2o-unsplash.jpg")
+
+$font-stack: 'Montserrat', san-serif
+=font-h1($family, $color, $weight, $size, $align)
+    font-family: $font-stack
+    color: $color
+    font-weight: $weight
+    font-size: $size
+    text-align: $align
+
+$tablet: 768px
+$mobile: 500px
+
+=flex($flow: row, $justify: flex-start, $align: stretch)
+    display: flex
+    flex-flow: $flow
+    justify-content: $justify
+    align-items: $align
+
